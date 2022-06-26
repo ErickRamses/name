@@ -1,0 +1,310 @@
+ :root{
+  --back:#222831; 
+  --lol:#393E46; 
+  --whit:#EEEEEE;
+ }
+
+
+
+body{
+    background-color:var(--back) ;
+    color: var(--whit);
+    font-size: 30px;
+    //z-index: 100000000000000000;
+    // background-image: url(back.jpg);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+    
+}
+#lol{
+    
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    height: 40%;
+    width: 60%;
+    height: 500px;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    background-color:var(--lol) ;
+     align-items: center;
+     justify-content: center;
+     input{
+      margin-bottom: 20px;
+        width: 500px;
+        height: auto;
+        font-size: 50px;
+        border-radius: 10px;
+     }
+     button{
+        margin-left: 5px;
+        position: relative;
+        top: -13px;
+     }
+}
+.load{
+  width: 250px;
+  height: 40px;
+  opacity: .7;
+  border-radius: .125rem;
+  margin-bottom: .50rem;
+
+  background-color: rgb(255, 255, 255);
+  animation:identifier 1s linear infinite alternate;
+}
+@keyframes identifier {
+  0%{
+    background-color: hsl(200, 20%, 70%);
+  }
+  50%{
+    background-color: hsl(200, 20%, 95%);
+
+  }
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(0, 173, 181);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: darken($color: rgb(0, 173, 181), $amount: 10%) }
+  
+  .button:active {
+    background-color: darken($color: rgb(0, 173, 181), $amount: 10%);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+//checkbox
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+.right{
+  font-size: 40px;
+  position: absolute;
+  right:20px;
+    overflow:auto ;
+    z-index: 1000000;
+}
+
+
+
+
+
+
+
+
+// @media (max-width:1000px) {
+//         #lol{
+//             width: 600px;
+            
+//         }
+// }
+// @media (max-width:500px) {
+//   #lol{
+//       width: 600px;
+//       input{
+       
+//         width: 300px;
+//       }
+//   }
+// }
+// @media (min-width:1920px) {
+//   #lol{
+//       width: 1152px;
+      
+//   }
+// }
+
+@media (min-width: 1290px) {
+  body{
+    //background-color: rgb(255, 0, 0);
+    #lol{
+      
+      //margin: 0px;
+      height: 653px;
+    //  height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+
+      width: 1161px;
+       input{
+        margin-bottom: 20px;
+          width: 80%;
+          height: auto;
+          font-size: 50px;
+          border-radius: 10px;
+       }
+       button{
+          margin-left: 5px;
+          position: relative;
+          top: -13px;
+       }
+
+  }
+  }
+}
+@media (max-width: 1290px) {
+  body{
+   // background-color: rgb(255, 255, 0);
+    #lol{
+      
+      padding-top: 50px;
+      padding-bottom: 50px;
+      
+      height: 70%;
+   //   height: auto;
+
+      width: 90%;
+       input{
+        margin-bottom: 20px;
+          width: 80%;
+          height: auto;
+          font-size: 50px;
+          border-radius: 10px;
+       }
+       button{
+          margin-left: 5px;
+          position: relative;
+          top: -13px;
+       }
+
+  }
+  }
+}
+@media (max-width: 768px) {
+  body{
+    //background-color: rgb(0, 255, 47);
+    #lol{
+      
+      padding-top: 50px;
+      padding-bottom: 50px;
+      
+      
+      height: 70%;
+      //height: auto;
+
+      width: 90%;
+       input{
+        margin-bottom: 20px;
+          width: 90%;
+          height: auto;
+          font-size: 50px;
+          border-radius: 10px;
+       }
+       button{
+          margin-left: 5px;
+          position: relative;
+          top: -13px;
+       }
+
+  }
+
+
+  }
+}
+@media (max-width: 480px) {
+  body{
+  //  background-color: rgb(0, 166, 255);
+    #lol{
+      
+      
+      height: auto;
+      width: 90%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+       input{
+        margin-bottom: 20px;
+          width: 90%;
+          height: auto;
+          font-size: 50px;
+          border-radius: 10px;
+       }
+       button{
+          margin-left: 5px;
+          position: relative;
+          top: -13px;
+       }
+
+  }
+}
+// input[type="checkbox"]:checked~#trajectory{
+  
+// }
+
+}
