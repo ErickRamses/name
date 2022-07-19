@@ -16,9 +16,9 @@ body {
   top: 50%;
   left: 50%;
   padding: 20px;
-  height: 40%;
-  width: 60%;
-  height: 500px;
+  width: 80%;
+  max-width: 1000px;
+  min-width: 320px;
   transform: translate(-50%, -50%);
   flex-direction: column;
   text-align: center;
@@ -29,10 +29,11 @@ body {
 }
 #lol input {
   margin-bottom: 20px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: auto;
   font-size: 50px;
-  border-radius: 10px;
+  border-radius: 13px;
 }
 #lol button {
   margin-left: 5px;
@@ -154,86 +155,10 @@ input:checked + .slider:before {
   position: absolute;
   right: 20px;
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 8px;
   z-index: 1000000;
-}
-
-@media (min-width: 1290px) {
-  body #lol {
-    height: 653px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 1161px;
-  }
-  body #lol input {
-    margin-bottom: 20px;
-    width: 80%;
-    height: auto;
-    font-size: 50px;
-    border-radius: 10px;
-  }
-  body #lol button {
-    margin-left: 5px;
-    position: relative;
-    top: -13px;
-  }
-}
-@media (max-width: 1290px) {
-  body #lol {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: 70%;
-    width: 90%;
-  }
-  body #lol input {
-    margin-bottom: 20px;
-    width: 80%;
-    height: auto;
-    font-size: 50px;
-    border-radius: 10px;
-  }
-  body #lol button {
-    margin-left: 5px;
-    position: relative;
-    top: -13px;
-  }
-}
-@media (max-width: 768px) {
-  body #lol {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: 70%;
-    width: 90%;
-  }
-  body #lol input {
-    margin-bottom: 20px;
-    width: 90%;
-    height: auto;
-    font-size: 50px;
-    border-radius: 10px;
-  }
-  body #lol button {
-    margin-left: 5px;
-    position: relative;
-    top: -13px;
-  }
-}
-@media (max-width: 480px) {
-  body #lol {
-    height: auto;
-    width: 90%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  body #lol input {
-    margin-bottom: 20px;
-    width: 90%;
-    height: auto;
-    font-size: 50px;
-    border-radius: 10px;
-  }
-  body #lol button {
-    margin-left: 5px;
-    position: relative;
-    top: -13px;
-  }
 }/*# sourceMappingURL=main.css.map */

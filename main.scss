@@ -25,9 +25,11 @@ body{
     top: 50%;
     left: 50%;
     padding: 20px;
-    height: 40%;
-    width: 60%;
-    height: 500px;
+    //height: 40%;
+     width: 80%;
+     max-width: 1000px;
+     min-width: 320px;
+    // height: 500px;
     transform: translate(-50%,-50%);
     flex-direction: column;
     text-align: center;
@@ -37,10 +39,11 @@ body{
      justify-content: center;
      input{
       margin-bottom: 20px;
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         height: auto;
         font-size: 50px;
-        border-radius: 10px;
+        border-radius: 13px;
      }
      button{
         margin-left: 5px;
@@ -158,6 +161,11 @@ body{
   position: absolute;
   right:20px;
     overflow:auto ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;  
+  gap: 8px;
     z-index: 1000000;
 }
 
@@ -190,121 +198,121 @@ body{
 //   }
 // }
 
-@media (min-width: 1290px) {
-  body{
-    //background-color: rgb(255, 0, 0);
-    #lol{
+// @media (min-width: 1290px) {
+//   body{
+//     //background-color: rgb(255, 0, 0);
+//     #lol{
       
-      //margin: 0px;
-      height: 653px;
-    //  height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+//       //margin: 0px;
+//       height: 653px;
+//     //  height: auto;
+//     padding-top: 50px;
+//     padding-bottom: 50px;
     
 
-      width: 1161px;
-       input{
-        margin-bottom: 20px;
-          width: 80%;
-          height: auto;
-          font-size: 50px;
-          border-radius: 10px;
-       }
-       button{
-          margin-left: 5px;
-          position: relative;
-          top: -13px;
-       }
+//       width: 1161px;
+//        input{
+//         margin-bottom: 20px;
+//           width: 80%;
+//           height: auto;
+//           font-size: 50px;
+//           border-radius: 10px;
+//        }
+//        button{
+//           margin-left: 5px;
+//           position: relative;
+//           top: -13px;
+//        }
 
-  }
-  }
-}
-@media (max-width: 1290px) {
-  body{
-   // background-color: rgb(255, 255, 0);
-    #lol{
-      
-      padding-top: 50px;
-      padding-bottom: 50px;
-      
-      height: 70%;
-   //   height: auto;
-
-      width: 90%;
-       input{
-        margin-bottom: 20px;
-          width: 80%;
-          height: auto;
-          font-size: 50px;
-          border-radius: 10px;
-       }
-       button{
-          margin-left: 5px;
-          position: relative;
-          top: -13px;
-       }
-
-  }
-  }
-}
-@media (max-width: 768px) {
-  body{
-    //background-color: rgb(0, 255, 47);
-    #lol{
-      
-      padding-top: 50px;
-      padding-bottom: 50px;
-      
-      
-      height: 70%;
-      //height: auto;
-
-      width: 90%;
-       input{
-        margin-bottom: 20px;
-          width: 90%;
-          height: auto;
-          font-size: 50px;
-          border-radius: 10px;
-       }
-       button{
-          margin-left: 5px;
-          position: relative;
-          top: -13px;
-       }
-
-  }
-
-
-  }
-}
-@media (max-width: 480px) {
-  body{
-  //  background-color: rgb(0, 166, 255);
-    #lol{
-      
-      
-      height: auto;
-      width: 90%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-       input{
-        margin-bottom: 20px;
-          width: 90%;
-          height: auto;
-          font-size: 50px;
-          border-radius: 10px;
-       }
-       button{
-          margin-left: 5px;
-          position: relative;
-          top: -13px;
-       }
-
-  }
-}
-// input[type="checkbox"]:checked~#trajectory{
-  
+//   }
+//   }
 // }
+// @media (max-width: 1290px) {
+//   body{
+//    // background-color: rgb(255, 255, 0);
+//     #lol{
+      
+//       padding-top: 50px;
+//       padding-bottom: 50px;
+      
+//       height: 70%;
+//    //   height: auto;
 
-}
+//       width: 90%;
+//        input{
+//         margin-bottom: 20px;
+//           width: 80%;
+//           height: auto;
+//           font-size: 50px;
+//           border-radius: 10px;
+//        }
+//        button{
+//           margin-left: 5px;
+//           position: relative;
+//           top: -13px;
+//        }
+
+//   }
+//   }
+// }
+// @media (max-width: 768px) {
+//   body{
+//     //background-color: rgb(0, 255, 47);
+//     #lol{
+      
+//       padding-top: 50px;
+//       padding-bottom: 50px;
+      
+      
+//       height: 70%;
+//       //height: auto;
+
+//       width: 90%;
+//        input{
+//         margin-bottom: 20px;
+//           width: 90%;
+//           height: auto;
+//           font-size: 50px;
+//           border-radius: 10px;
+//        }
+//        button{
+//           margin-left: 5px;
+//           position: relative;
+//           top: -13px;
+//        }
+
+//   }
+
+
+//   }
+// }
+// @media (max-width: 480px) {
+//   body{
+//   //  background-color: rgb(0, 166, 255);
+//     #lol{
+      
+      
+//       height: auto;
+//       width: 90%;
+//       padding-top: 50px;
+//       padding-bottom: 50px;
+//        input{
+//         margin-bottom: 20px;
+//           width: 90%;
+//           height: auto;
+//           font-size: 50px;
+//           border-radius: 10px;
+//        }
+//        button{
+//           margin-left: 5px;
+//           position: relative;
+//           top: -13px;
+//        }
+
+//   }
+// }
+// // input[type="checkbox"]:checked~#trajectory{
+  
+// // }
+
+// }
